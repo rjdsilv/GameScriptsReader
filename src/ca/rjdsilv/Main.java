@@ -13,6 +13,12 @@ public class Main {
 		System.out.println("\n######################################################## Scriptable Objects");
 		folder = new File("C:\\Users\\rjdsi\\GitHub\\COMP-305\\COMP305_FinalProject\\Assets\\ScriptableObjects");
 		listFilesForFolder(folder, ".asset");
+
+		System.out.println("\n######################################################## Sound Index");
+		folder = new File("C:\\Users\\rjdsi\\GitHub\\COMP-305\\COMP305_FinalProject\\Assets\\Sounds");
+		listFilesForFolder(folder, ".mp3");
+		listFilesForFolder(folder, ".ogg");
+		listFilesForFolder(folder, ".wav");
 	}
 
 	private static void listFilesForFolder(final File folder, String extension) throws Exception {
